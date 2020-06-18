@@ -1,0 +1,556 @@
+
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    background-color: lightgrey;
+
+}
+
+.header {
+    width: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    border: 5px solid white;
+}
+
+.header > .back-image {
+    width: 100%;
+
+}
+
+.my-name {
+    position: absolute;
+    width: 30%;
+    top: 10%;
+    left: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.my-name:hover {
+    transform: scale(1.1);
+    color: rgba(129, 230, 254, 0.73);
+
+}
+
+.my-name > h2 {
+    font-size: 40px;
+}
+
+.my-name > p {
+    font-size: 26px;
+    padding-top: 15px;
+
+}
+
+
+.my-photo {
+    position: absolute;
+    top: -18%;
+    left: 37%;
+    width: 24%;
+    border-radius: 180%;
+    border: 5px solid white;
+
+    transition: 0.5s;
+}
+
+.my-photo > img {
+    border-radius: 180%;
+
+}
+
+.my-photo:hover {
+    transform: scale(1.1);
+}
+
+
+nav {
+    width: 30%;
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    font-size: 20px;
+}
+
+nav > ul > li {
+
+    margin-bottom: 10px;
+
+}
+
+nav > ul > li:hover {
+    transform: scale(1.1);
+    color: rgba(129, 230, 254, 0.73);
+}
+
+
+.phone-number > p {
+    margin-left: 5px;
+
+}
+
+.gmail > p {
+    margin-left: 5px;
+}
+
+
+.likedin > p {
+    margin-left: 5px;
+
+}
+
+
+nav > ul > li > a {
+
+    color: white;
+
+}
+
+nav > ul > li > a:hover {
+
+    color: rgba(129, 230, 254, 0.73);
+
+}
+
+
+.phone-number {
+    display: flex;
+
+}
+
+.phone-number > img {
+    width: 30px;
+    height: 30px;
+}
+
+.gmail {
+    display: flex;
+}
+
+
+.gmail > img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.likedin {
+
+    display: flex;
+}
+
+.likedin > img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.main {
+    width: 90%;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.employment {
+    width: 32%;
+
+
+}
+
+.employment:hover {
+    transform: scale(1.1);
+    background-color: seashell;
+}
+
+
+.employment-title {
+    display: flex;
+    justify-content: center;
+}
+
+.employment-title > p {
+    font-size: 28px;
+}
+
+.employment-title > img {
+    width: 30px;
+
+}
+
+.employment-content {
+    margin-top: 15px;
+
+}
+
+
+.employment-content1 {
+    display: flex;
+}
+
+.employment-content2 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.employment-content3 {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.shape1 {
+
+    display: flex;
+    text-align: center;
+    max-width: 50px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+
+    border-top: 25px solid transparent;
+    border-left: 25px solid #555;
+    border-bottom: 25px solid transparent;
+}
+
+.square {
+    width: 20px;
+    height: 50px;
+    background-color: rgba(8, 8, 11, 0.84)
+}
+
+
+.education {
+    width: 32%;
+
+
+}
+
+.education:hover {
+    transform: scale(1.1);
+    background-color: seashell;
+}
+
+.education-title {
+    display: flex;
+}
+
+.education-title > p {
+    font-size: 28px;
+}
+
+.education-title > img {
+    width: 30px;
+}
+
+.education-content {
+
+    margin-top: 15px;
+
+}
+
+.education-content1 {
+    display: flex;
+
+
+}
+
+.education-content2 {
+    display: flex;
+    margin-top: 15px;
+}
+
+.education-content3 {
+    display: flex;
+    margin-top: 15px;
+}
+
+
+.skills {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills:hover {
+    transform: scale(1.1);
+}
+
+.skills-title {
+
+    display: flex;
+
+}
+
+
+.skills-title > img {
+    width: 30px;
+}
+
+.skills-title > p {
+
+    font-size: 28px;
+
+}
+
+.skills-content {
+
+    margin-top: 15px;
+}
+
+
+.progress-bar {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.line {
+    height: 15px;
+    max-width: 100%;
+    margin: auto;
+    line-height: 25px;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+
+.line:before {
+
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 10px;
+    top: 0;
+    z-index: -2;
+    background-color: #555;
+}
+
+
+.line:after {
+    content: '';
+    background: rgba(8, 8, 11, 0.84);
+    height: 10px;
+    transition: 0.8s;
+    display: block;
+
+    width: 100%;
+    animation: animate 1 4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.line1:after {
+    max-width: 90%;
+}
+
+.line2:after {
+    max-width: 70%;
+}
+
+.line3:after {
+    max-width: 30%;
+}
+
+.line4:after {
+    max-width: 100%;
+}
+
+.line5:after {
+    max-width: 70%;
+}
+
+.line6:after {
+    max-width: 60%;
+}
+
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.footer {
+    display: none;
+}
+
+@media only screen and (max-width: 1165px) {
+
+    .my-name > h2 {
+        font-size: 30px;
+    }
+
+    nav {
+
+        left: 65%;
+    }
+
+}
+
+@media only screen and (max-width: 1135px) {
+    .employment {
+        width: 48%;
+
+    }
+
+    .education {
+        width: 48%;
+    }
+
+
+    .skills {
+
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+
+    .main {
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .my-name > h2 {
+        font-size: 25px;
+    }
+
+    .my-name > p {
+        font-size: 15px;
+    }
+
+    .phone-number > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .phone-number > p {
+        font-size: 15px;
+    }
+
+    .gmail > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .gmail > p {
+        font-size: 15px;
+    }
+
+    .likedin > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .likedin > p {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    nav {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #555;
+
+    }
+
+    .footer > li > a {
+
+        color: white;
+
+    }
+
+
+    .my-photo {
+
+        left: 5%;
+    }
+
+    .my-name {
+        width: 40%;
+        left: 50%
+    }
+
+    .main {
+        flex-direction: column;
+
+
+    }
+
+    .employment {
+        width: 90%;
+    }
+
+    .education {
+
+        width: 90%;
+    }
+
+    .skills {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 570px) {
+    .my-photo {
+        left: 1%;
+    }
+
+    .my-name {
+        left: 30%;
+
+    }
+
+    .my-name > h2 {
+        font-size: 15px;
+
+    }
+
+    .my-name > p {
+        font-size: 12px;
+        padding-top: 5px;
+    }
+}
